@@ -9,9 +9,7 @@ terraform {
   }
 }
 
-variable "prefix" {
-  default = "nedum"
-}
+
 
 
 # Configure the Microsoft Azure Provider
@@ -113,7 +111,7 @@ resource "azurerm_network_security_group" "mynsg" {
 
 #6. Get a Public IP
 resource "azurerm_public_ip" "mypublicip" {
-  name                = "${var.prefix}-publicip"
+  name                = "var.prefix-publicip"
   resource_group_name = azurerm_resource_group.myresourcegroup.name
   location            = azurerm_resource_group.myresourcegroup.location
   allocation_method   = "Static"
@@ -126,7 +124,7 @@ resource "azurerm_public_ip" "mypublicip" {
 
 #7. Create the Network Interface Card and associating the created Public IP 
 resource "azurerm_network_interface" "nic" {
-  name                = "${var.prefix}-nic"
+  name                = "var.prefix-nic"
   location            = azurerm_resource_group.myresourcegroup.location
   resource_group_name = azurerm_resource_group.myresourcegroup.name
 
@@ -147,7 +145,7 @@ resource "tls_private_key" "example_ssh" {
 
 # Create a VM and attach the already created NIC 
 resource "azurerm_virtual_machine" "myvm" {
-  name                  = "${var.prefix}-vm"
+  name                  = "var.prefix-vm"
   location              = azurerm_resource_group.myresourcegroup.location
   resource_group_name   = azurerm_resource_group.myresourcegroup.name
   network_interface_ids = [azurerm_network_interface.nic.id]
