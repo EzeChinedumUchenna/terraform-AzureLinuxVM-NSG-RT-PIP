@@ -13,7 +13,7 @@ Create a file called variables.tf where you would declare some important variabl
 Create another file called main.tf and describe the cloud provider, Azure, in this case.
 To initialize Terraform, run init, and you can see that Terraform will download the provider plugin for Azurerm.
 
-$ terraform init
+   **<em>$ terraform init</em>**
 
 
 ## Create a Resource Group
@@ -45,15 +45,15 @@ Create the Azure VM as shown in the terraform code in the main.tf
 ## Execution Plan and Applying the Changes
 You can now generate the execution plan by running the plan command and checking if everything is as expected.
 
-$ terraform plan
+**<em>$ terraform plan</em>**
 
 You can also use the terraform validate command to check if the configuration is correct using the following command:
 
-$ terraform validate
+**<em>$ terraform validate</em>**
 
 Once confirmed, you can proceed with the apply command to provision a new or apply the changes to the existing infrastructure.
 
-$ terraform apply
+**<em>$ terraform apply</em>**
 
 Once successfully applied, you will get the Virtual Machines IP addresses created by Terraform. You can use the IP addresses to log in to them using SSH.
 
