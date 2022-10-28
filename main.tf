@@ -17,6 +17,7 @@ provider "azurerm" {
   features {}
 }
 
+
 #1. Create a Resource
 resource "azurerm_resource_group" "myresourcegroup" {
   name                = "${var.prefix}-RG"
@@ -111,7 +112,7 @@ resource "azurerm_network_security_group" "mynsg" {
 
 #6. Get a Public IP
 resource "azurerm_public_ip" "mypublicip" {
-  name                = "var.prefix-publicip"
+  name                = "${var.prefix}-publicip"
   resource_group_name = azurerm_resource_group.myresourcegroup.name
   location            = azurerm_resource_group.myresourcegroup.location
   allocation_method   = "Static"
@@ -124,7 +125,7 @@ resource "azurerm_public_ip" "mypublicip" {
 
 #7. Create the Network Interface Card and associating the created Public IP 
 resource "azurerm_network_interface" "nic" {
-  name                = "var.prefix-nic"
+  name                = "${var.prefix}-nic"
   location            = azurerm_resource_group.myresourcegroup.location
   resource_group_name = azurerm_resource_group.myresourcegroup.name
 
@@ -136,25 +137,33 @@ resource "azurerm_network_interface" "nic" {
   }
 }
 
+# Bootstrapping Template File
+data "template_file" "nginx-install" {
+  template = file("install-nginx.sh")
+}
+
 # Create (and display) an SSH key
 resource "tls_private_key" "example_ssh" {
   algorithm = "RSA"
-  rsa_bits  = 4096
+  rsa_bits  =   4096
 }
+
 
 
 # Create a VM and attach the already created NIC 
 resource "azurerm_virtual_machine" "myvm" {
-  name                  = "var.prefix-vm"
+  name                  = "${var.prefix}-vm"
   location              = azurerm_resource_group.myresourcegroup.location
   resource_group_name   = azurerm_resource_group.myresourcegroup.name
   network_interface_ids = [azurerm_network_interface.nic.id]
   vm_size               = "Standard_DS1_v2"
   #custom_data           = "install-nginx.sh"
+  
+
   delete_os_disk_on_termination = true     # This line to delete the OS disk automatically when deleting the VM
   delete_data_disks_on_termination = true  # This line to delete the data disks automatically when deleting the VM
 
-
+  
  
   storage_image_reference {
     publisher = "Canonical"
@@ -167,14 +176,19 @@ resource "azurerm_virtual_machine" "myvm" {
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
+    
+    
   }
   os_profile {
     computer_name  = "nginx-vm"
     admin_username = "chinedumeze"
     admin_password = "Fitb@5044444"
+    
+    custom_data    = base64encode(data.template_file.nginx-install.rendered)
   }
   os_profile_linux_config {
     disable_password_authentication = false
+    
   }
   tags = {
     environment = "staging"
@@ -183,5 +197,20 @@ resource "azurerm_virtual_machine" "myvm" {
   
 }
 
+# Configuring Auto-shutdown for the Nginx server
+resource "azurerm_dev_test_global_vm_shutdown_schedule" "vm-shutdown" {
+  virtual_machine_id = azurerm_virtual_machine.myvm.id
+  location           = azurerm_resource_group.myresourcegroup.location
+  enabled            = true
+
+  daily_recurrence_time = "2200" # This means 10PM UTC+1
+  timezone              = "W. Central Africa Standard Time"
+
+
+  notification_settings {
+    enabled         = false
+   
+  }
+ }
  
 

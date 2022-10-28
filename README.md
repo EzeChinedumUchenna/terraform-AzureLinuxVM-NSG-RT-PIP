@@ -1,4 +1,4 @@
-# Building an Nginx webserver on Azure using Terraform
+# Building an Nginx webserver on Azure with Autoshutdown using Terraform 
 
 Here will automated the creation of an Nginx web server on Azure using Terraform as an Infrastructure as Code (IaC) tool. 
 
@@ -40,7 +40,7 @@ Add the following lines of code containing the Network Security Group configurat
 To expose our Nginx web server to the outside world, we need to create a public IP address using the azurerm_public_ip and network interface resources azurerm_network_interface. The network interface resides in the subnet and will be attached to the virtual machine exposing a web server to the outside world.
 
 ## Azure Virtual Machine Instance
-Create the Azure VM as shown in the terraform code in the main.tf
+Create the Azure VM with Auto shutdown running Nginx as shown in the terraform code in the main.tf
 
 ## Execution Plan and Applying the Changes
 You can now generate the execution plan by running the plan command and checking if everything is as expected.
