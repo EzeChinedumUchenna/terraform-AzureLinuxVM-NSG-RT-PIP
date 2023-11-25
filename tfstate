@@ -1,0 +1,473 @@
+{
+  "version": 4,
+  "terraform_version": "1.3.0",
+  "serial": 103,
+  "lineage": "467fe991-5f09-251f-a0bc-ec571453c417",
+  "outputs": {
+    "public_ip_address": {
+      "value": "20.172.190.75",
+      "type": "string"
+    },
+    "resource_group_name": {
+      "value": {
+        "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG",
+        "location": "eastus",
+        "name": "nedum-RG",
+        "tags": {
+          "owner": "nedum"
+        },
+        "timeouts": null
+      },
+      "type": [
+        "object",
+        {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "tags": [
+            "map",
+            "string"
+          ],
+          "timeouts": [
+            "object",
+            {
+              "create": "string",
+              "delete": "string",
+              "read": "string",
+              "update": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "tls_private_key": {
+      "value": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----\n",
+      "type": "string",
+      "sensitive": true
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_network_interface",
+      "name": "nic",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "applied_dns_servers": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "enable_accelerated_networking": false,
+            "enable_ip_forwarding": false,
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/networkInterfaces/nedum-nic",
+            "internal_dns_name_label": "",
+            "internal_domain_name_suffix": "iz5o2qrw0r4unfi5jazeodueme.bx.internal.cloudapp.net",
+            "ip_configuration": [
+              {
+                "gateway_load_balancer_frontend_ip_configuration_id": "",
+                "name": "testconfiguration1",
+                "primary": true,
+                "private_ip_address": "10.0.2.4",
+                "private_ip_address_allocation": "Dynamic",
+                "private_ip_address_version": "IPv4",
+                "public_ip_address_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/publicIPAddresses/nedum-publicip",
+                "subnet_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network/subnets/nedum-subnet"
+              }
+            ],
+            "location": "eastus",
+            "mac_address": "00-0D-3A-1B-A6-AD",
+            "name": "nedum-nic",
+            "private_ip_address": "10.0.2.4",
+            "private_ip_addresses": [
+              "10.0.2.4"
+            ],
+            "resource_group_name": "nedum-RG",
+            "tags": {},
+            "timeouts": null,
+            "virtual_machine_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Compute/virtualMachines/nedum-vm"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_public_ip.mypublicip",
+            "azurerm_resource_group.myresourcegroup",
+            "azurerm_subnet.mysubnet",
+            "azurerm_virtual_network.myvirtualnetwork"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_security_group",
+      "name": "mynsg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/networkSecurityGroups/nedum",
+            "location": "eastus",
+            "name": "nedum",
+            "resource_group_name": "nedum-RG",
+            "security_rule": [
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "*",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "Nginx-port",
+                "priority": 103,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "8080",
+                "source_port_ranges": []
+              },
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "*",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "SSH",
+                "priority": 102,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "22",
+                "source_port_ranges": []
+              },
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "*",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "http",
+                "priority": 100,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "80",
+                "source_port_ranges": []
+              },
+              {
+                "access": "Allow",
+                "description": "",
+                "destination_address_prefix": "*",
+                "destination_address_prefixes": [],
+                "destination_application_security_group_ids": [],
+                "destination_port_range": "*",
+                "destination_port_ranges": [],
+                "direction": "Inbound",
+                "name": "https",
+                "priority": 101,
+                "protocol": "Tcp",
+                "source_address_prefix": "*",
+                "source_address_prefixes": [],
+                "source_application_security_group_ids": [],
+                "source_port_range": "443",
+                "source_port_ranges": []
+              }
+            ],
+            "tags": {
+              "environment": "nedum"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.myresourcegroup"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_public_ip",
+      "name": "mypublicip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_method": "Static",
+            "domain_name_label": null,
+            "edge_zone": "",
+            "fqdn": null,
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/publicIPAddresses/nedum-publicip",
+            "idle_timeout_in_minutes": 4,
+            "ip_address": "20.172.190.75",
+            "ip_tags": {},
+            "ip_version": "IPv4",
+            "location": "eastus",
+            "name": "nedum-publicip",
+            "public_ip_prefix_id": null,
+            "resource_group_name": "nedum-RG",
+            "reverse_fqdn": null,
+            "sku": "Standard",
+            "sku_tier": "Regional",
+            "tags": {
+              "environment": "nedum"
+            },
+            "timeouts": null,
+            "zones": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.myresourcegroup"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "myresourcegroup",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG",
+            "location": "eastus",
+            "name": "nedum-RG",
+            "tags": {
+              "owner": "nedum"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "mysubnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_prefixes": [
+              "10.0.2.0/24"
+            ],
+            "delegation": [],
+            "enforce_private_link_endpoint_network_policies": false,
+            "enforce_private_link_service_network_policies": false,
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network/subnets/nedum-subnet",
+            "name": "nedum-subnet",
+            "resource_group_name": "nedum-RG",
+            "service_endpoint_policy_ids": [],
+            "service_endpoints": [],
+            "timeouts": null,
+            "virtual_network_name": "nedum-network"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.myresourcegroup",
+            "azurerm_virtual_network.myvirtualnetwork"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_subnet_network_security_group_association",
+      "name": "asociate-nsg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network/subnets/nedum-subnet",
+            "network_security_group_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/networkSecurityGroups/nedum",
+            "subnet_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network/subnets/nedum-subnet",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_network_security_group.mynsg",
+            "azurerm_resource_group.myresourcegroup",
+            "azurerm_subnet.mysubnet",
+            "azurerm_virtual_network.myvirtualnetwork"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_machine",
+      "name": "myvm",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "additional_capabilities": [],
+            "availability_set_id": null,
+            "boot_diagnostics": [],
+            "delete_data_disks_on_termination": true,
+            "delete_os_disk_on_termination": true,
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Compute/virtualMachines/nedum-vm",
+            "identity": [],
+            "license_type": null,
+            "location": "eastus",
+            "name": "nedum-vm",
+            "network_interface_ids": [
+              "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/networkInterfaces/nedum-nic"
+            ],
+            "os_profile": [
+              {
+                "admin_password": "",
+                "admin_username": "chinedumeze",
+                "computer_name": "nginx-vm",
+                "custom_data": ""
+              }
+            ],
+            "os_profile_linux_config": [
+              {
+                "disable_password_authentication": false,
+                "ssh_keys": []
+              }
+            ],
+            "os_profile_secrets": [],
+            "os_profile_windows_config": [],
+            "plan": [],
+            "primary_network_interface_id": null,
+            "proximity_placement_group_id": null,
+            "resource_group_name": "nedum-RG",
+            "storage_data_disk": [],
+            "storage_image_reference": [
+              {
+                "id": "",
+                "offer": "UbuntuServer",
+                "publisher": "Canonical",
+                "sku": "16.04-LTS",
+                "version": "latest"
+              }
+            ],
+            "storage_os_disk": [
+              {
+                "caching": "ReadWrite",
+                "create_option": "FromImage",
+                "disk_size_gb": 30,
+                "image_uri": "",
+                "managed_disk_id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/NEDUM-RG/providers/Microsoft.Compute/disks/myosdisk1",
+                "managed_disk_type": "Standard_LRS",
+                "name": "myosdisk1",
+                "os_type": "Linux",
+                "vhd_uri": "",
+                "write_accelerator_enabled": false
+              }
+            ],
+            "tags": {
+              "environment": "staging"
+            },
+            "timeouts": null,
+            "vm_size": "Standard_DS1_v2",
+            "zones": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_network_interface.nic",
+            "azurerm_public_ip.mypublicip",
+            "azurerm_resource_group.myresourcegroup",
+            "azurerm_subnet.mysubnet",
+            "azurerm_virtual_network.myvirtualnetwork"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "myvirtualnetwork",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_space": [
+              "10.0.0.0/16"
+            ],
+            "bgp_community": "",
+            "ddos_protection_plan": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "flow_timeout_in_minutes": 0,
+            "guid": "42ee7e46-d436-467d-951f-4832470e8464",
+            "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network",
+            "location": "eastus",
+            "name": "nedum-network",
+            "resource_group_name": "nedum-RG",
+            "subnet": [
+              {
+                "address_prefix": "10.0.2.0/24",
+                "id": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/virtualNetworks/nedum-network/subnets/nedum-subnet",
+                "name": "nedum-subnet",
+                "security_group": "/subscriptions/75aefcf7-6f52-4c6f-873e-20374a2173b9/resourceGroups/nedum-RG/providers/Microsoft.Network/networkSecurityGroups/nedum"
+              }
+            ],
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.myresourcegroup"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "tls_private_key",
+      "name": "example_ssh",
+      "provider": "provider[\"registry.terraform.io/hashicorp/tls\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "algorithm": "RSA",
+            "ecdsa_curve": "P224",
+            "id": "760813fea59caf82e23acfa44c732c01503af5d7",
+            "private_key_openssh": "-----BEGIN OPENSSH PRIVATE KEY-----\n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\n-----END OPENSSH PRIVATE KEY-----\n",
+            "private_key_pem": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----\n",
+            "private_key_pem_pkcs8": "-----BEGIN PRIVATE KEY-----\n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\nTszyyKC8/NFi/6nvj2+aypKUfIqC8A==\n-----END PRIVATE KEY-----\n",
+            "public_key_fingerprint_md5": "c8:71:33:79:2c:7e:8a:04:0b:19:83:e5:cd:39:63:e6",
+            "public_key_fingerprint_sha256": "SHA256:kWdyHdcxR1TlV3rPi7DakZfLy/XXV7tSlQNvmtPAtys",
+            "public_key_openssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrlubCIApUg7OENZGxl8rXP45OQBP98FkB8gD4RF5YdhJE2VLPqmBNIe+AEgFD1ZDY3q0kdEkS6v1AWE70cds5xuG3FUYHvnV4ZQC/OatMa8AIcie9J6brd5OVh6jQH5wH4LY/7nRdPW9Yz/VMbz1IlPmmRiGr/t9JLwqIifbrk5OJLPtguxDhkOqnGpsukODu1E2uDwmGMePb5T3QP4xoO9O25A+ZuS3eee2vFOv9zMXUT83751rp+xLlx3t9DJ6HSnWlsqG+UxG5bTxH3gGy7PgdBL46SaiIthiAGnW4H/RzoiLmu1VuHUJ54tWzX6yesuaU1mVk6ZwbKiCuBDt3j/V0hrBYd/s4Yh3ScYEEklf02oY8GzC7hoeROud6dwyuWHpGKgjclqLqU8MliD1fjhcXPchw9aEmLfgzf7EbR0OVXseWmeDcWf+4QVM1uUKQcGPUYFn38HAVU3qgAJBW5jrk0HPngNHHpmI+FJkvpp2GGQNt1UjUa5eR8SID+BaK0CaPXSuRKI89Ict+Gco3ZH0KXMkXS3SpSBFfpKB72VjYin/eqCa9+9ebDtbSaKIe9Nh50MtsZaurtbhl10R4k3DIazGOqTiWea/PSZtqH82/NbRE3IwNqtyrhK7Y9WsqVCZyydlcP+gtSN8oP4DXMgYGCazaQdjtW4uhTxDsQQ==\n",
+            "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAq5bmwiAKVIOzhDWRsZfK\n1z+OTkAT/fBZAfIA+EReWHYSRNlSz6pgTSHvgBIBQ9WQ2N6tJHRJEur9QFhO9HHb\nOcbhtxVGB751eGUAvzmrTGvACHInvSem63eTlYeo0B+cB+C2P+50XT1vWM/1TG89\nSJT5pkYhq/7fSS8KiIn265OTiSz7YLsQ4ZDqpxqbLpDg7tRNrg8JhjHj2+U90D+M\naDvTtuQPmbkt3nntrxTr/czF1E/N++da6fsS5cd7fQyeh0p1pbKhvlMRuW08R94B\nsuz4HQS+OkmoiLYYgBp1uB/0c6Ii5rtVbh1CeeLVs1+snrLmlNZlZOmcGyogrgQ7\nd4/1dIawWHf7OGId0nGBBJJX9NqGPBswu4aHkTrnencMrlh6RioI3Jai6lPDJYg9\nX44XFz3IcPWhJi34M3+xG0dDlV7Hlpng3Fn/uEFTNblCkHBj1GBZ9/BwFVN6oACQ\nVuY65NBz54DRx6ZiPhSZL6adhhkDbdVI1GuXkfEiA/gWitAmj10rkSiPPSHLfhnK\nN2R9ClzJF0t0qUgRX6Sge9lY2Ip/3qgmvfvXmw7W0miiHvTYedDLbGWrq7W4ZddE\neJNwyGsxjqk4lnmvz0mbah/NvzW0RNyMDarcq4Su2PVrKlQmcsnZXD/oLUjfKD+A\n1zIGBgms2kHY7VuLoU8Q7EECAwEAAQ==\n-----END PUBLIC KEY-----\n",
+            "rsa_bits": 4096
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
