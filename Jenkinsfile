@@ -11,7 +11,7 @@ stages {
             steps {
                 script {
                     echo 'downloading terraform files ...'
-                    sh 'bash ./config.sh'
+                    sh "bash ./config.sh ${acton}"
                 }
             }
         }  

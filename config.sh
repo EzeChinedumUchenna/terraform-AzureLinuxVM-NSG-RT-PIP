@@ -1,3 +1,3 @@
 terraform init
 terraform plan
-terraform apply -auto-approve
+terraform $1 -auto-approve
